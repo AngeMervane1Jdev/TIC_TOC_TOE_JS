@@ -1,0 +1,46 @@
+#g{
+  background-color:#C4ACAC;
+  width:48%;
+  position:fixed;
+  float:left;
+}
+#Ctn{
+    flex-direction:column;
+    height:50%;
+    width:100%;
+    background-color:green;
+    align-items:center;
+    justify-content:center;
+    
+    
+}
+#top{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+     
+        
+}
+#text{
+  height:50%;
+  width:50%:
+}
+#message{
+  font-size:20px;
+}
+#rejouer{
+  padding:1%;
+  margin:1%;
+  background-color:green;
+  color:white;
+  
+}
+fieldset{
+  width:48%;
+  background-color:green;
+}
+#top > button{
+  margin:3%;
+  padding:5%;
+}
