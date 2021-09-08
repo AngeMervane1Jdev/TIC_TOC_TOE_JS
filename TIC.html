@@ -3,35 +3,46 @@
 <html>
 <head>
     <title>TIC-TOC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel=stylesheet href=TIC.css>
 </head>
+<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- 
+- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="this.webm" type="video/webm">
+
+</video>
 <body>
- <div id=g>
+<div class="container text-center mt-3 ">
+    <div id="g">
     <div id=Ctn>
         <div id=top>
-        <button>_</button>
-        <button>_</button>
-        <button>_</button>
+            <button>_</button>
+            <button>_</button>
+            <button>_</button>
+            </div>
+        <div id=top>
+            <button>_</button>
+            <button>_</button>
+            <button>_</button>
         </div>
         <div id=top>
-        <button>_</button>
-        <button>_</button>
-        <button>_</button>
-        </div>
-        <div id=top>
-        <button>_</button>
-        <button>_</button>
-        <button>_</button>
+            <button>_</button>
+            <button>_</button>
+            <button>_</button>
         </div>
         
     </div>
     <div id=text>
         <fieldset>
-        <legend><h1><u>Console de jeux: </u></h1></legend><h1 id=message></h1>
+        <legend><h3><u>Console de jeux: </u></h3></legend><h1 id="message" class="title"></h1>
         </fieldset>
-        <button id=rejouer>Actualiser</button>
+        <button id="rejouer" class="btn btn-primary">Actualiser</button>
     </div>
     
+</div>
 </div>
 <script src=TIC.js></script>
 </body>

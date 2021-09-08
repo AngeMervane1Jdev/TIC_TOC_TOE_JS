@@ -15,7 +15,7 @@ var rePlay=document.getElementById('rejouer');
     }
     return{envoyerUnMessage:setText};
 };*/
-//Fonction verifiant si le boutton est déjà clique ou pas
+//Fonction verifiant si le boutton est dï¿½jï¿½ clique ou pas
 function posValide(btn){
     if(btn.innerHTML!='_'){
         return false;
@@ -39,7 +39,7 @@ function color(a,b,c,d){
     mesBoutons[c].style.backgroundColor=d;
 }
 rePlay.addEventListener('click',main);
-//Fonction verifiant si le jeu est gagné ou pas
+//Fonction verifiant si le jeu est gagnï¿½ ou pas
 function Gagner(r){
     var i=0,j=0;
     for(i=0;i<3;i++){
@@ -69,7 +69,7 @@ function Une(){
                   //Le jeu est il gagne ?
                    if(Gagner(winnerBottonsColor)){
                        fin=true;
-                        messager.innerHTML='Bravo!! le joueur '+Signes[joueur]+' a gagné le jeu';
+                        messager.innerHTML='Bravo!! le joueur '+Signes[joueur]+' a gagnï¿½ le jeu';
                         rePlay.style.backgroundColor='red';
                         rePlay.innerHTML="Rejouer";
                         
@@ -82,7 +82,7 @@ function Une(){
                         rePlay.innerHTML="Rejouer";
                         fin=true;
                     }
-                    //Si le jeu n'est ni finit ni gagné...continuer
+                    //Si le jeu n'est ni finit ni gagnï¿½...continuer
                     else{
                         joueur=joueur ^ 1;
                         messager.innerHTML='Joueur '+Signes[joueur]+' c\'est ton tour!!';
@@ -91,7 +91,7 @@ function Une(){
             }
             else{
                 
-                messager.innerHTMl='Vous ne pouvez pas choisir un emplacement déjà occupé!!';
+                messager.innerHTMl='Vous ne pouvez pas choisir un emplacement dï¿½jï¿½ occupï¿½!!';
             }
               
                
@@ -193,8 +193,9 @@ function Seul(){
             else{
                if(posValide(this)){
                   this.innerHTML=Signes[joueur];
+                  Signes[joueur]=="X"?this.style.color="red":this.style.color="white";
                   if(Gagner(winnerBottonsColor)){
-                     messager.innerHTML='Bravo!! vous avez Gagné';
+                     messager.innerHTML='Bravo!! vous avez Gagnï¿½';
                      fin=true;
                      rePlay.innerHTML='Rejouer';
                      return;
@@ -224,7 +225,7 @@ function Seul(){
                   
                }
                else{
-                  messager.innerHTMl='Vous ne pouvez pas choisir un emplacement déjà occupé!!';
+                  messager.innerHTMl='Vous ne pouvez pas choisir un emplacement dï¿½jï¿½ occupï¿½!!';
                }
             }
             
@@ -236,7 +237,7 @@ function Seul(){
 }
 //Fonction Motrice
 function main(){
-   var choix=prompt("1-Jouer Seul\n2-Jouer à deux");
+   var choix=prompt("1-Jouer Seul\n2-Jouer ï¿½ deux");
    
       fin=false;
       for(var i=0,len=mesBoutons.length; i<len;i++){
@@ -264,3 +265,5 @@ function main(){
 
 }
 main();
+
+

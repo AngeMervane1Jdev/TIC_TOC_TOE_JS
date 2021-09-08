@@ -1,46 +1,31 @@
-#g{
-  background-color:#C4ACAC;
-  width:48%;
-  position:fixed;
-  float:left;
-}
-#Ctn{
-    flex-direction:column;
-    height:50%;
-    width:100%;
-    background-color:green;
-    align-items:center;
-    justify-content:center;
-    
-    
+#top > button{
+   height:70px;
+   width:70px;
+   background-color: blue;
+   font-size: 20px;
+   margin: 10px;
 }
 #top{
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-     
-        
+  padding: 20px ;
+  height:100%;
+  width: 100%;
 }
-#text{
-  height:50%;
-  width:50%:
-}
-#message{
-  font-size:20px;
-}
-#rejouer{
-  padding:1%;
-  margin:1%;
-  background-color:green;
-  color:white;
+body{
   
+  background-color:rgb(194, 194, 213);
 }
-fieldset{
-  width:48%;
-  background-color:green;
-}
-#top > button{
-  margin:3%;
-  padding:5%;
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+background-size: cover;
+transition: 1s opacity;
 }
